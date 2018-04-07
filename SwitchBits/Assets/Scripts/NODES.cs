@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public abstract class NODES : MonoBehaviour {
+public abstract class NODES : MonoBehaviour
+{
 
     public Transform cameraPosition;
 
@@ -13,14 +14,15 @@ public abstract class NODES : MonoBehaviour {
     public Collider col;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         col = GetComponent<Collider>();
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    OnMouseDown()
+    {
+        
+    }
 }

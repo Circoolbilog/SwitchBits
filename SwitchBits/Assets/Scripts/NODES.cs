@@ -21,8 +21,5 @@ public abstract class NODES : MonoBehaviour
 
     }
 
-    OnMouseDown()
-    {
-        
-    }
+  
 }

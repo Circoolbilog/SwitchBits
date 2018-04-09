@@ -7,6 +7,7 @@ public class Start_and_Reset : MonoBehaviour
     public GameObject pusher;
     bool simStart = false;
     public float moveSpeed = 60f;
+    bool move = false;
 
     void Update()
     {
@@ -16,6 +17,10 @@ public class Start_and_Reset : MonoBehaviour
         {
             StartR();
         }
+        if (move == true)
+        {
+            pusher.transform.position += transform.right * Time.deltaTime;
+        }
     }
     public void StartR()
     {
@@ -23,7 +28,7 @@ public class Start_and_Reset : MonoBehaviour
         {
             simStart = true;
             Debug.Log(simStart);
-            pusher.transform.Translate(new Vector3(1, 0, 0) * Time.deltaTime);
+            move = true;
         }
         else if (simStart == true)
         {

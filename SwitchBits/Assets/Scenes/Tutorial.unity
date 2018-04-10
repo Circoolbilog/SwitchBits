@@ -6691,15 +6691,6 @@ Prefab:
       propertyPath: m_Name
       value: Or Gate
       objectReference: {fileID: 0}
-    - target: {fileID: 1442574930218624, guid: 4a857725c8fe39b4194df318d70df2eb, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65990080781232122, guid: 4a857725c8fe39b4194df318d70df2eb,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a857725c8fe39b4194df318d70df2eb, type: 2}
   m_IsPrefabParent: 0

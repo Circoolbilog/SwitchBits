@@ -49,7 +49,7 @@ public class Start_and_Reset : MonoBehaviour
             {
                 simStart = true;
                 Debug.Log(simStart);
-                move = true;
+                move = true;                //will move the pusher
             }
             else if (simStart == true)
             {

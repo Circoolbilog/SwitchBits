@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
 
-    public void PlayGame()
+    public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -14,6 +14,11 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
+   
 
     public void QuitGame()
     {

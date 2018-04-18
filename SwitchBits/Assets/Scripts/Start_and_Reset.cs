@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Start_and_Reset : MonoBehaviour
 {
+    public GameObject Canvas;
+    bool SceneActive = false;
     public GameObject pusher;
     public GameObject pointLight;
     public float moveSpeed = 60f;
@@ -43,28 +45,27 @@ public class Start_and_Reset : MonoBehaviour
     
     public void StartR()        //will start or reset the level
     {
-        if(pointLight.activeSelf == true)
+        if(SceneActive == false)
         {
-            if (simStart == false)
+            if (pointLight.activeSelf == true)
             {
-                simStart = true;
-                Debug.Log(simStart);
-                move = true;                //will move the pusher
+                if (simStart == false)
+                {
+                    simStart = true;
+                    Debug.Log(simStart);
+                    move = true;                //will move the pusher
+                }
             }
-            else if (simStart == true)
-            {
-                simStart = false;
-                Debug.Log(simStart);
-                SceneManager.LoadScene(scene.name);
-
-            }
+            SceneActive = true;
+            Canvas.gameObject.SetActive(true);
         }
-        else if (simStart == true)
+        
+        else if (SceneActive == true)
         {
-            simStart = false;
+            SceneActive = false;
             Debug.Log(simStart);
             SceneManager.LoadScene(scene.name);
-
+            Canvas.gameObject.SetActive(false);
         }
     }
 
